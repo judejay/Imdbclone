@@ -3,7 +3,7 @@ import NavbarItem from './NavbarItem'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-center dark:bg-amber-500 bg-purple-100 lg:text-lg p-4 '>
+    <div className='flex justify-center bg-gradient-to-r from-slate-200 via-purple-10 to-slate-400 text-center lg:text-lg p-4 '>
         <NavbarItem  title="Trending" param="fetchTrending"/>
         <NavbarItem  title="Top Rated" param="fetchTopRated"/>
     </div>

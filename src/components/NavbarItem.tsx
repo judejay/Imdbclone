@@ -16,7 +16,7 @@ const NavbarItem = ({title, param}: navbarItemProps) => {
     <div>
         <Link
         className={`m-4 hover:text-amber-600 font-semibold p-2 ${
-           genre && genre === param && "underline underline-offset-8 decoration-4 decoration-purple-500 rounded-lg"
+           genre && genre === param && "underline underline-offset-8 decoration-4 decoration-purple-500 dark:decoration-amber-500 rounded-lg"
         }`}
         href={`/?genre=${param}`}>
             {title}
