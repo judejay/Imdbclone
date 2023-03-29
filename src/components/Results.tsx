@@ -3,7 +3,10 @@ import Card from "./Card"
 export interface IMovie {
     adult: boolean,
     backdrop_path: string,
+    release_date: string,
     id: number,
+    release: Date,
+    //first_air_date: Date,
     name: string,
     original_title: string,
     original_language: string,

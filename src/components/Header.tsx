@@ -20,7 +20,7 @@ const Header = () => {
         <div className='flex items-center space-x-5'>
             <DarkModeSwitch></DarkModeSwitch>
             <Link href="/">
-                <h2 className='text-2xl'><span className='font-bold text-cyan-400 bg-purple-300 dark:bg-amber-600 py-1 px-2 rounded-lg mr-1'>ITEDB</span> </h2>
+                <h2 className='text-2xl'><span className='font-bold text-cyan-400 bg-purple-300 dark:bg-amber-600 py-1 px-2 rounded-lg mr-1'>ITEDb</span> </h2>
             </Link>
         </div>
         </div>

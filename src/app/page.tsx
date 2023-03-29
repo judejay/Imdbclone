@@ -33,7 +33,7 @@ export default async function Home({searchParams}: HomeProps) {
   return (
     <div className='max-w-6xl mx-auto space-y-4 p-4'>
     <h1 className='text-2xl font-medium text-white dark:text-amber-600 ' >Home Page</h1>
-   <div className='text-2xl font-medium text-black'>
+   <div className=' text-black'>
       <Results results={results}></Results>
    </div>
   
