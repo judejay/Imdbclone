@@ -13,7 +13,7 @@ const DarkModeSwitch = () => {
 
   return (
 <>
-    { mounted && currentTheme === "dark" ?   <BsFillMoonFill className='text-xl hover:text-purple-500' onClick={() => setTheme("light")} />: <MdOutlineLightMode  className='text-xl  hover:text-amber-500' onClick={() => setTheme("dark")} /> }
+    { mounted && currentTheme === "dark" ?   <BsFillMoonFill className='text-slate-600 text-xl hover:text-purple-500' onClick={() => setTheme("light")} />: <MdOutlineLightMode  className='text-xl text-white  hover:text-amber-500' onClick={() => setTheme("dark")} /> }
     
    
 </>  )
