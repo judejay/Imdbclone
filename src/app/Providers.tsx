@@ -8,7 +8,7 @@ type ProvidersProps ={
 const Providers = ({children}: ProvidersProps) => {
   return (
     <ThemeProvider enableSystem={true} attribute='class'>
-    <div className='dark:bg-gray-700 dark:text-gray-200 text-gray-700 transition-colors duration-300 min-h-screen select-none'>
+    <div className='dark:bg-slate-100 bg-slate-600 dark:text-gray-200 text-gray-700 transition-colors duration-300 min-h-screen select-none'>
       {children}
     </div>
     

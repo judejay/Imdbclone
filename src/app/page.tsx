@@ -30,6 +30,9 @@ export default async function Home({searchParams}: HomeProps) {
   const results = data.results;
   console.log(results);
   return (
-   <h1 className='text-red-600'>Home Page</h1>
-  )
+    <div className='max-w-6xl mx-auto space-y-4 p-4'>
+    <h1 className='text-2xl font-medium dark:text-amber-600 text-purple-600'>Home Page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestias delectus eaque perferendis, rerum necessitatibus inventore voluptatem sequi architecto commodi ab corporis facilis labore, alias eveniet beatae quis iure! Eius odio dicta dolorem dolorum esse, modi optio commodi, perferendis, cumque nisi alias quas. Sunt, neque!</p>
+    </div>)
+  
 }
