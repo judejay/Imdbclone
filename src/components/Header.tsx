@@ -5,12 +5,15 @@ import { AiOutlineInfoCircle } from 'react-icons/ai'
 import Link from 'next/link'
 import DarkModeSwitch from './DarkModeSwitch'
 import Logo  from '../../public/logo.svg'
+import Image from 'next/image'
 
 const Header = () => {
   return (
     <div className='flex justify-between mx-4 max-w-6xl sm:mx-auto items-center py-6'>
         <div className='flex'>
-        <span className='text-xl hidden p-2 mx-2 sm:inline bg-purple-400 dark:bg-amber-600 decoration-sky-50 rounded-lg'>Judetec</span>
+ 
+        <span className='text-xl hidden p-2 mx-2 sm:inline bg-purple-400 dark:bg-amber-600 decoration-sky-50 rounded-lg'><Image src={Logo} alt=""  width={45} 
+></Image></span>
             <MenuItem title='HOME' address='/' Icon={AiOutlineHome}></MenuItem>
             <MenuItem title='ABOUT' address='/about' Icon={AiOutlineInfoCircle}></MenuItem>
         </div>
