@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { MdOutlineLightMode } from 'react-icons/md'
-import { BsFillMoonFill } from 'react-icons/bs'
+import { BsMoon } from 'react-icons/bs'
 import { useTheme } from 'next-themes'
 
 const DarkModeSwitch = () => {
@@ -13,7 +13,7 @@ const DarkModeSwitch = () => {
 
   return (
 <>
-    { mounted && currentTheme === "dark" ?   <BsFillMoonFill className='text-slate-600 text-xl hover:text-purple-500' onClick={() => setTheme("light")} />: <MdOutlineLightMode  className='text-xl text-white  hover:text-amber-500' onClick={() => setTheme("dark")} /> }
+    { mounted && currentTheme === "dark" ?   <BsMoon className='text-slate-600 text-bold text-xl hover:text-purple-500' onClick={() => setTheme("light")} />: <MdOutlineLightMode  className='text-xl text-white  hover:text-amber-500' onClick={() => setTheme("dark")} /> }
     
    
 </>  )
