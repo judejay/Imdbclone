@@ -26,8 +26,8 @@ const page = async ({params}: MovieProps) => {
           alt="Movie poster">
            
         </Image>
-        <div className='p-2' >
-            <h2 className='text-lg mb-3 font-bold '>{movie.title || movie.name}</h2>
+        <div className='p-2 dark:text-gray-600 text-black' >
+            <h2 className=' text-lg mb-3 font-bold '>{movie.title || movie.name}</h2>
             <p className='text-lg mb-3'><span className="text-semibold mr-1" 
                     
                 
