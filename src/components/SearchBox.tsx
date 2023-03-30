@@ -1,8 +1,24 @@
-import React from 'react'
-
+"use client";
+import React, { useState } from 'react'
+import { useRouter } from 'next/navigation';
 const SearchBox = () => {
+    const [search, setSearch] = useState("");
+    const router = useRouter();
+    const handleSubmit = (e: { preventDefault: () => void; }) =>{
+        e.preventDefault();
+        if (!search) return;
+        router.push(`/search/${search}`);
+
+
+    }
   return (
-    <div>SearchBox</div>
+    <form onSubmit={handleSubmit} className='flex max-w-6xl mx-auto justify-between items-center px-5 '>
+        <input
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+         type="text" className="text w-full h-14 rounded-sm placeholder-gray-500 outline-none bg-transparent flex-1" placeholder='Search keywords...'/>
+        <button disabled={!search} className='text-amber-600 disabled:text-grey-400' type="submit">Search</button>
+    </form>
   )
 }
 
