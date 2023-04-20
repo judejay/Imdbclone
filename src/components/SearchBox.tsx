@@ -16,8 +16,8 @@ const SearchBox = () => {
         <input
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-         type="text" className="text w-full h-14 rounded-sm placeholder-gray-500 outline-none bg-transparent flex-1" placeholder='Search keywords...'/>
-        <button disabled={!search} className='text-amber-600 disabled:text-grey-400' type="submit">Search</button>
+         type="text" className=" text-white dark:text-slate-600 w-full h-14 rounded-sm placeholder-gray-500 outline-none bg-transparent flex-1" placeholder='Search keywords...'/>
+        <button disabled={!search} className='text-white dark:text-slate-600 text-bold dark:disabled:bg-slate-300 bg-purple-300 disabled:bg-slate-400 dark:bg-amber-600 py-1 px-2 rounded-lg' type="submit">Search</button>
     </form>
   )
 }
